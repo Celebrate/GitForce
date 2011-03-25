@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Edit Custom Tools</title>
+</head>
+
+<body>
+
+<h1>Edit Custom Tools</h1>
+<hr>
+<p>The Tools menu provides ways to integrate external applications and commands 
+within GitForce.</p>
+<p>As you add or edit custom tools, you need to specify the tool name (which 
+will be shown on the menus) and command (including the full path to the tool).</p>
+<p>Optionally, you may specify the arguments, initial directory to run a tool 
+from and a number of flags.</p>
+<p>Within the Arguments and Initial directory specification, you can use macros. 
+Macros will be substituted as the tool is run. Currently only one macro is 
+implemented:</p>
+<table border="1" width="100%">
+	<tr>
+		<td width="93">Macro:</td>
+		<td>Expands into:</td>
+	</tr>
+	<tr>
+		<td width="93">%r</td>
+		<td>Root directory of the current git repository</td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>The example shown next is a setting to run <b>gource</b> visualizer (<a target="_blank" href="http://code.google.com/p/gource/">http://code.google.com/p/gource</a>).</p>
+<p>The name field is set to the tool name (although it can be anything) and the 
+Command field points to the actual tool executable.</p>
+<p>The initial directory is simply set to execute within the current repo root 
+(%r macro).</p>
+<p><img border="0" src="Resources/dlg-edit-tools.gif" width="519" height="339"></p>
+<p>Once this sample tool has been set, the main Tools menu will have it added:</p>
+<p>
+<img border="0" src="Resources/menu-custom-tool.gif" width="131" height="118"></p>
+<p>Clicking on that menu item will start gource tool in the context of a current 
+repo.</p>
+<p>&nbsp;</p>
+<hr>
+<p><a href="index.html">Back</a></p>
+
+</body>
+
+</html>
