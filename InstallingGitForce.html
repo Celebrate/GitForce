@@ -860,11 +860,13 @@ table.MsoTableGrid
 	mso-bidi-theme-font:minor-bidi;}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="2049"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
@@ -1120,9 +1122,9 @@ choices: mSysGit and Cygwin. At this time, GitForce supports only mSysGit. </p>
 href="http://code.google.com/p/msysgit/">http://code.google.com/p/msysgit/</a><span
 class=MsoHyperlink><o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
- id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
- path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
  <v:formulas>
   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -1140,7 +1142,7 @@ class=MsoHyperlink><o:p></o:p></span></p>
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_14" o:spid="_x0000_i1032" type="#_x0000_t75"
+</v:shapetype><v:shape id="Picture_x0020_14" o:spid="_x0000_s1032" type="#_x0000_t75"
  style='width:269.25pt;height:217.5pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image001.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=359 height=290
@@ -1152,7 +1154,7 @@ src="InstallingGitForce_files/image002.jpg" v:shapes="Picture_x0020_14"><![endif
 version, if available. Download it and run it.</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_2" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:270pt;
+ id="Picture_x0020_2" o:spid="_x0000_s1031" type="#_x0000_t75" style='width:270pt;
  height:210.75pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image003.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=360 height=281
@@ -1162,7 +1164,7 @@ src="InstallingGitForce_files/image004.jpg" v:shapes="Picture_x0020_2"><![endif]
 folder:</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_3" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:270pt;
+ id="Picture_x0020_3" o:spid="_x0000_s1030" type="#_x0000_t75" style='width:270pt;
  height:210.75pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image005.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=360 height=281
@@ -1173,7 +1175,7 @@ leave the suggested ones, or you can also select to have Git available from the
 Explorer context menu (recommended):</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_4" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:270.75pt;
+ id="Picture_x0020_4" o:spid="_x0000_s1029" type="#_x0000_t75" style='width:270.75pt;
  height:210.75pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image007.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=361 height=281
@@ -1183,7 +1185,7 @@ src="InstallingGitForce_files/image008.jpg" v:shapes="Picture_x0020_4"><![endif]
 your path:</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_6" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:270.75pt;
+ id="Picture_x0020_6" o:spid="_x0000_s1028" type="#_x0000_t75" style='width:270.75pt;
  height:210.75pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image009.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=361 height=281
@@ -1194,7 +1196,7 @@ handled by Git in several ways. I suggest leaving the default option to change
 the line endings accordingly as this will work with all Windows editors:</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_7" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:4in;
+ id="Picture_x0020_7" o:spid="_x0000_s1027" type="#_x0000_t75" style='width:4in;
  height:224.25pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image011.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=384 height=299
@@ -1204,7 +1206,7 @@ src="InstallingGitForce_files/image012.jpg" v:shapes="Picture_x0020_7"><![endif]
 on your Windows:</p>
 
 <p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_8" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:4in;
+ id="Picture_x0020_8" o:spid="_x0000_s1026" type="#_x0000_t75" style='width:4in;
  height:224.25pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image013.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=384 height=299
@@ -1356,8 +1358,8 @@ mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri'><o:p></o:p></span></
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 margin-left:.5in;line-height:normal;vertical-align:baseline'><span
 style='mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:
-Calibri;color:black;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_26"
- o:spid="_x0000_i1025" type="#_x0000_t75" alt="Description: https://lh3.googleusercontent.com/bkBhY7SMvjagPWQBfDjdcainZOHUaZdb_2CtvB3qC47afwbvJerEbL0ZEuiCQmBX7ePtMRoVky1h0NPfleNxT0TEpkOrZ0rnseYGVgL5DalZALegIYQ"
+Calibri;color:black;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_26" o:spid="_x0000_s1025" type="#_x0000_t75" alt="Description: https://lh3.googleusercontent.com/bkBhY7SMvjagPWQBfDjdcainZOHUaZdb_2CtvB3qC47afwbvJerEbL0ZEuiCQmBX7ePtMRoVky1h0NPfleNxT0TEpkOrZ0rnseYGVgL5DalZALegIYQ"
  style='width:291.75pt;height:262.5pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="InstallingGitForce_files/image015.png" o:title="bkBhY7SMvjagPWQBfDjdcainZOHUaZdb_2CtvB3qC47afwbvJerEbL0ZEuiCQmBX7ePtMRoVky1h0NPfleNxT0TEpkOrZ0rnseYGVgL5DalZALegIYQ"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=389 height=350

@@ -1,0 +1,25 @@
+body {
+    font-family: georgia,serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing:1px;
+	background-image:url('fine-writing-paper.jpg');
+}
+
+h3 { 
+    font-family: georgia,serif;
+    color: #755c44;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin: 10px;
+}
+ 
+h3 em{
+    color:#8F7C47;
+    letter-spacing:0.05em;
+    text-transform:none;
+    font-size:20px;
+}
+ 
