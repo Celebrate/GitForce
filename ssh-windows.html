@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SSH on Windows</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<h1>SSH on Windows</h1>
+<hr>
+<p>GitForce uses PuTTY daemon and PLINK proxy to manage SSH keys for git 
+commands. This tutorial assumes you are setting up a github project, but the 
+same principle should apply with other SSH servers.</p>
+<p>Click on the &quot;Settings&quot; -&gt; &quot;Manage SSH Keys...&quot; to open up a SSH dialog (you 
+can also click on the icon of keys on the main app toolbar).</p>
+<p><img border="0" src="Resources/ssh-windows.gif" width="513" height="428"></p>
+<p>If you don't have your own key, you need to create it.</p>
+<p>Click on the PuTTYgen (marked as &quot;3&quot;) to start a PuTTY generation utility. 
+Click on the &quot;Generate&quot; and move your mouse as the key is being generated, after 
+which you should see your public key ready:</p>
+<p>
+<img border="0" src="Resources/ssh-windows-putty.gif" width="483" height="467"></p>
+<p>Click on &quot;Save private key&quot; and save the complete key pair onto your local 
+drive (its extension should be *.PPK). We will need that file in a later step.</p>
+<p>Select all text from the public key control (starting with &quot;ssh-rsa...&quot;) and 
+copy it... into the github: &quot;Account Settings&quot; -&gt; &quot;SSH Public Keys&quot; as 
+illustrated here:</p>
+<p><img border="0" src="Resources/ssh-github.gif" width="757" height="472"></p>
+<p>Go back to the SSH dialog and see &quot;Select keys to import&quot; listbox (marked 
+above as &quot;1&quot;). Keys listed there will be auto-loaded next time you start 
+GitForce. We want to add our key to this list. That's the key we saved in a step 
+above.</p>
+<p>Click on the &quot;Add...&quot; next to the &quot;Select keys to import&quot; and navigate to the 
+key you saved (its extension should be *.PPK).</p>
+<p>Click on &quot;Import now&quot; to actually import this key into the Pageant. If you 
+open Pageant (by double-clicking on the icon of a computer with a hat in your OS 
+status bar), you should see a key being added.</p>
+<p><img border="0" src="Resources/ssh-pageant.gif" width="501" height="353"></p>
+<p>The last thing we need to do is to add github's public key to our list of 
+known hosts. Open the SSH dialog again and select the &quot;Remote Keys&quot; tab (as 
+opposed to &quot;Local Keys&quot; tab which we used this far). Paste your project's SSH 
+address and click on the &quot;Add Host&quot;.</p>
+<p>
+<img border="0" src="Resources/ssh-add-github-key.gif" width="481" height="428"></p>
+<p>You should see github's SSH information added to the list of known hosts:</p>
+<p>
+<img border="0" src="Resources/ssh-add-github-key-added.gif" width="366" height="153"></p>
+<p>You are ready to push/pull to your project now using the SSH protocol.</p>
+<hr>
+<p><a href="index.html">Back</a></p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>
