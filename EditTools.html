@@ -18,18 +18,47 @@ will be shown on the menus) and command (including the full path to the tool).</
 <p>Optionally, you may specify the arguments, initial directory to run a tool 
 from and a number of flags.</p>
 <p>Within the Arguments and Initial directory specification, you can use macros. 
-Macros will be substituted as the tool is run. Currently only one macro is 
-implemented:</p>
+Macros will be substituted as the tool is run. These are the macros:</p>
 <table border="1" width="100%">
 	<tr>
 		<td width="93">Macro:</td>
 		<td>Expands into:</td>
 	</tr>
 	<tr>
-		<td width="93">%r</td>
-		<td>Root directory of the current git repository</td>
+		<td>%r</td>
+		<td>Root directory of the current git repository.</td>
+	</tr>
+	<tr>
+		<td>%u</td>
+		<td>User name.</td>
+	</tr>
+	<tr>
+		<td>%e</td>
+		<td>User email.</td>
+	</tr>
+	<tr>
+		<td>%b</td>
+		<td>Active branch of the current git repository.</td>
+	</tr>
+	<tr>
+		<td>%f</td>
+		<td>Single selected file in the left pane. If more than one file is selected, the first one is used.</td>
+	</tr>
+	<tr>
+		<td>%F</td>
+		<td>List of selected files in the left pane.</td>
+	</tr>
+	<tr>
+		<td>%d</td>
+		<td>Single selected directory in the left pane. If more than one directory is selected, the first one is used.</td>
+	</tr>
+	<tr>
+		<td>%D</td>
+		<td>List of selected directories in the left pane.</td>
 	</tr>
 </table>
+<p>All file names include full path. Directories do not have trailing slash.
+</p>
 <p>&nbsp;</p>
 <p>The example shown next is a setting to run <b>gource</b> visualizer (<a target="_blank" href="http://code.google.com/p/gource/">http://code.google.com/p/gource</a>).</p>
 <p>The name field is set to the tool name (although it can be anything) and the 
